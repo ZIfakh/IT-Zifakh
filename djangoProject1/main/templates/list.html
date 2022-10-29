@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}{{ title }}{% endblock title %}
+
+{% block content %}
+    <table>
+    <tbody>
+        {% for i in list %}
+            <tr>
+                <td>id: {{ i.id }}</td>
+                <td>, первое значение {{ i.val1 }}</td>
+                <td>, второе значение {{ i.val2 }}</td> 
+                <td>, результат {{ i.result}}</td>
+                <td>, оператор {{ i.operator }}</td>
+                <td>, время {{ i.created_at }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+{% endblock %}
+
