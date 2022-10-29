@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Сайт желаний</title>
+</head>
+<body>
+    <div align="center">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <p style="color: red; font-size: 50px;">Желание</p>
+        <p style="color: blue; font-size: 25px">Добавьте свое желание!</p>
+        <button id="2"> Добавить</button>
+        <input id="3" >
+        <div id="1">
+            
+        <div>
+        </div>
+    </div>
+</body>
+  <style>
+      body {
+          background-color: snow;
+      }
+
+      button {
+          color: black;
+          font-size: 17px;
+          background: #d4e5dd;
+      }
+      h2 {
+        font-size: 50px;
+      }
+  </style>
+</html>
+<script>
+    let myButton = document.getElementById("2");
+    let div = document.getElementById("1");
+    let inputText = document.getElementById("3");
+    myButton.onclick = function() {
+    let element = document.createElement("div");
+    element.textContent = inputText.value;
+    inputText.value = "";
+    div.appendChild(element);
+    };
+</script>
